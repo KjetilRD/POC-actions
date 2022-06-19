@@ -1,1 +1,1 @@
-dbt-postgres
+dbt-postgres SQLAlchemy
