@@ -8,3 +8,12 @@ with conn.cursor() as cur:
     res = cur.fetchall()
     conn.commit()
     print(res)
+    cur.execute(
+      "create table test_01 ( col1 int)")
+    cur.execute(
+      "Insert into test_01 select 10")
+    cur.execute(
+      "Select * from test_01")
+    res = cur.fetchall()
+    conn.commit()
+    print(res)
