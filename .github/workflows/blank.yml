@@ -48,7 +48,7 @@ jobs:
         run: |
           pytest
           pwd
-          %cp -R .postgresql 
+          cp -R .postgresql /home/runner/
 
      # Runs a single command using the runners shell
       - name: Run a one-line script
