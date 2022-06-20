@@ -13,6 +13,8 @@ with conn.cursor() as cur:
     cur.execute(
       "Insert into test_01 select 10")
     cur.execute(
+      "Insert into test_01 select 10")
+    cur.execute(
       "Select * from test_01")
     res = cur.fetchall()
     conn.commit()
