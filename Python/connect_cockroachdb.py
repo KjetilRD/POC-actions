@@ -9,7 +9,7 @@ with conn.cursor() as cur:
     conn.commit()
     print(res)
     cur.execute(
-      "create table test_01 ( col1 int)")
+      "create table if not exists test_01 ( col1 int)")
     cur.execute(
       "Insert into test_01 select 10")
     cur.execute(
