@@ -1,2 +1,2 @@
-dbt-postgres 
 SQLAlchemy
+sqlalchemy-cockroachdb
