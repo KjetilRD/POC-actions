@@ -47,7 +47,7 @@ jobs:
       - name: Test with pytest
         run: |
           pytest
-          echo requirements.txt
+          pwd
 
      # Runs a single command using the runners shell
       - name: Run a one-line script
