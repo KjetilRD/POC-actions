@@ -48,7 +48,8 @@ jobs:
         run: |
           pytest
           pwd
-          cp -R .postgresql /home/runner/
+          #cp -R .postgresql /home/runner/
+          curl --create-dirs -o /home/runner/.postgresql/root.crt -O https://cockroachlabs.cloud/clusters/18599271-9f43-4f4c-ba1d-6347eab94558/cert
 
      # Runs a single command using the runners shell
       - name: Run a one-line script
