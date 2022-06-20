@@ -59,4 +59,4 @@ jobs:
         run: |
           python --version
           python Python/collect.py
-          python connect_cockroachdb.py
+          python Python/connect_cockroachdb.py
