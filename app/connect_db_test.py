@@ -1,11 +1,9 @@
 import connect_db
 
 def test_file1_method1():
-    connect_db.connect()
-    x = 5
-    y = 6
-    assert x+1 == y, "test failed"
-    # assert x == y, "test failed"
+    rs = connect_db.connect()
+
+    assert rs != None, "no resultset"
 
 
 def test_file1_method2():
