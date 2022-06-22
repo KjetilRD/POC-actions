@@ -46,8 +46,6 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest
         run: |
+          python --version
           curl --create-dirs -o /home/runner/.postgresql/root.crt -O https://cockroachlabs.cloud/clusters/18599271-9f43-4f4c-ba1d-6347eab94558/cert
           pytest
-          python --version
-          python app/connect_db.py
-
