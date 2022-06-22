@@ -1,4 +1,4 @@
-from app import connect_db
+import app.connect_db
 
 def test_file1_method1():
     connect_db.connect()
