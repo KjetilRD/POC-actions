@@ -20,5 +20,4 @@ def connect():
         res = cur.fetchall()
         conn.commit()
         print(res)
-
-connect()
+        return res
