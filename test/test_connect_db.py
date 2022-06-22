@@ -1,4 +1,4 @@
-import connect_db
+from ../python import connect_db
 
 def test_file1_method1():
     connect()
