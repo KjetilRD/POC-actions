@@ -4,6 +4,8 @@ def test_file1_method1():
     rs = connect_db.connect()
 
     assert rs != None, "no resultset"
+    assert len(rs) > 0, "no rows in resultset"
+    assert len(rs[0]) == 1, "1 column is resultset"
 
 
 def test_file1_method2():
