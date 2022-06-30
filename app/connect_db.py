@@ -13,6 +13,7 @@ def connect():
         print(res)
         return res
 
+
 def connect_ins_sel():
 
     conn = psycopg2.connect(os.environ["DATABASE_URL"])
@@ -33,5 +34,6 @@ def connect_ins_sel():
         conn.commit()
         print(res)
         return res
+
 
 connect()
