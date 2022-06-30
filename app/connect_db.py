@@ -5,6 +5,17 @@ def connect():
 
     conn = psycopg2.connect(os.environ["DATABASE_URL"])
     with conn.cursor() as cur:
+        cur.execute(
+          "Select * from test_01")
+        res = cur.fetchall()
+        conn.commit()
+        print(res)
+        return res
+
+def connect_ins_sel():
+
+    conn = psycopg2.connect(os.environ["DATABASE_URL"])
+    with conn.cursor() as cur:
         cur.execute("SELECT now()")
         res = cur.fetchall()
         conn.commit()
