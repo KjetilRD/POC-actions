@@ -33,3 +33,5 @@ def connect_ins_sel():
         conn.commit()
         print(res)
         return res
+
+connect()
