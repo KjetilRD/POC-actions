@@ -1,5 +1,6 @@
 import connect_db
 
+
 def test_file1_method1():
     rs = connect_db.connect()
 
