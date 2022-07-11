@@ -58,7 +58,8 @@ def print_log():
         return 0
 
 
-log_msg('Starting connect')
-connect()
-log_msg('Finished connect')
-print_log()
+def main():
+    log_msg('Starting connect')
+    connect()
+    log_msg('Finished connect')
+    print_log()
