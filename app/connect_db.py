@@ -45,7 +45,7 @@ def log():
         conn.commit()
         print(res)
         cur.execute(
-          "create table if not exists log_msg  (log_time timestamp with TimeZone, log_message varchar(2000))")
+          "create table if not exists log_msg  (log_time timestamp, log_message varchar(2000))")
         cur.execute(
           "Insert into log_msg select now(), 'Test log'")
         conn.commit()
