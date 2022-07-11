@@ -63,3 +63,5 @@ def main():
     connect()
     log_msg('Finished connect')
     print_log()
+
+if __name__== "__main__" : main()
