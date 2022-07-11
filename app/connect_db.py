@@ -35,14 +35,14 @@ def connect_ins_sel():
         return 0
 
 
-def log():
+def log_msg( msg ):
 
     conn = psycopg2.connect(os.environ["DATABASE_URL"])
     with conn.cursor() as cur:
         cur.execute(
           "create table if not exists log_msg  (log_time timestamp, log_message varchar(2000))")
         cur.execute(
-          "Insert into log_msg select now(), 'Test log'")
+          "Insert into log_msg select now(), '" + msg + "'")
         conn.commit()
         return 0
 
@@ -58,7 +58,7 @@ def print_log():
         return 0
 
 
-log()
+log('Starting connect')
 connect()
-log()
+log('Finished connect')
 print_log()
