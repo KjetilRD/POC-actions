@@ -52,5 +52,6 @@ def log():
         print(res)
         return res
 
-
+log()
 connect()
+log()
