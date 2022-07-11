@@ -44,8 +44,7 @@ def log():
         cur.execute(
           "Insert into log_msg select now(), 'Test log'")
         conn.commit()
-        print(res)
-        return res
+        return 0
 
 
 def print_log():
@@ -56,6 +55,7 @@ def print_log():
         res = cur.fetchall()
         conn.commit()
         print(res)
+        return 0
 
 
 log()
