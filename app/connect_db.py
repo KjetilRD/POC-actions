@@ -40,7 +40,7 @@ def log():
 
     conn = psycopg2.connect(os.environ["DATABASE_URL"])
     with conn.cursor() as cur:
-        cur.execute("SELECT now()")
+        cur.execute("SELECT * from log_msg")
         res = cur.fetchall()
         conn.commit()
         print(res)
