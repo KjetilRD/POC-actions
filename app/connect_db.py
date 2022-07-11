@@ -32,8 +32,7 @@ def connect_ins_sel():
           "Select * from test_01")
         res = cur.fetchall()
         conn.commit()
-        print(res)
-        return res
+        return 0
 
 
 def log():
