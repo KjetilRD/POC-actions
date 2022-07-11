@@ -49,7 +49,7 @@ def log():
         return res
 
 
-def print_log:
+def print_log():
 
     conn = psycopg2.connect(os.environ["DATABASE_URL"])
     with conn.cursor() as cur:
