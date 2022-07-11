@@ -38,7 +38,7 @@ def connect_ins_sel():
 
 def log():
 
-  conn = psycopg2.connect(os.environ["DATABASE_URL"])
+    conn = psycopg2.connect(os.environ["DATABASE_URL"])
     with conn.cursor() as cur:
         cur.execute("SELECT now()")
         res = cur.fetchall()
