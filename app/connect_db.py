@@ -36,4 +36,21 @@ def connect_ins_sel():
         return res
 
 
+def log();
+
+  conn = psycopg2.connect(os.environ["DATABASE_URL"])
+    with conn.cursor() as cur:
+        cur.execute("SELECT now()")
+        res = cur.fetchall()
+        conn.commit()
+        print(res)
+        cur.execute(
+          "create table if not exists log_msg  (log_time timestamp with TimeZone, log_message varchar(2000))")
+        cur.execute(
+          "Insert into log_msg select now(), 'Test log')
+        conn.commit()
+        print(res)
+        return res
+
+
 connect()
