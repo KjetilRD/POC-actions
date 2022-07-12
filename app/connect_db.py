@@ -62,7 +62,7 @@ def main():
     log_msg('Starting connect')
     connect()
     log_msg('Finished connect')
-    #print_log()
+    # print_log()
 
 
 if __name__ == "__main__":
