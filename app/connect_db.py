@@ -35,7 +35,7 @@ def connect_ins_sel():
         return 0
 
 
-def log_msg( msg ):
+def log_msg(msg):
 
     conn = psycopg2.connect(os.environ["DATABASE_URL"])
     with conn.cursor() as cur:
