@@ -3,6 +3,9 @@ name: SCHEDULE
 
 # Controls when the workflow will run
 on:
+  schedule:
+    - cron:  '* 08 * * *' 
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
