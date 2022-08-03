@@ -1,6 +1,5 @@
 name: SCHEDULE
 
-
 # Controls when the workflow will run
 on:
   schedule:
