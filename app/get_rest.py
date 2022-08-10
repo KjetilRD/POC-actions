@@ -13,8 +13,8 @@ def main():
     for ccy in bpi:
         print('Iterating:')
         #print(ccy)
-        #print(bpi[ccy])
-        print(ccy['symbol'])
+        b_c = bpi[ccy]
+        print(b_c['symbol'])
 
 
 if __name__ == "__main__":
