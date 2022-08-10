@@ -12,7 +12,7 @@ def main():
     #print(json_raw['bpi'])
     bpi = json_raw['bpi']
     print(bpi['USD'])
-    for ccy in json_raw:
+    for ccy in bpi:
         print('Iterating:')
         print(ccy)
         print(bpi[ccy])
