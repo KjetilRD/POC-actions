@@ -9,7 +9,7 @@ def main():
     json_raw = response.json()
     json_formed = json.dumps(json_raw, sort_keys=True, indent=4)
     print(json_formed)
-    for ccy in json_formed:
+    for ccy in json_raw:
         print('Iterating:')
         print(ccy)
 
