@@ -12,8 +12,9 @@ def main():
     bpi = json_raw['bpi']
     for ccy in bpi:
         print('Iterating:')
-        print(ccy)
-        print(bpi[ccy])
+        #print(ccy)
+        #print(bpi[ccy])
+        print(ccy['symbol'])
 
 
 if __name__ == "__main__":
