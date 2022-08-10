@@ -15,6 +15,7 @@ def main():
         #print(ccy)
         b_c = bpi[ccy]
         print(b_c['symbol'])
+        print(b_c['code'])
 
 
 if __name__ == "__main__":
