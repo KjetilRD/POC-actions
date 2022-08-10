@@ -12,7 +12,8 @@ def main():
     # for ccy in json_raw:
     #     print('Iterating:')
     #   print(ccy)
-    print(json_raw['bpi'])
-
+    #print(json_raw['bpi'])
+    bpi = json_raw['bpi']
+    print(bpi['USD'])
 if __name__ == "__main__":
     main()
