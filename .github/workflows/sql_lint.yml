@@ -36,3 +36,4 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           sqlfluff lint models --dialect snowflake --rules L019,L020,L021,L022
+          sqlfluff lint models --dialect ansi
