@@ -1,2 +1,2 @@
-select *
-from nbim_dm.instrument
+    select *
+from nbim_dm.instrument.  
